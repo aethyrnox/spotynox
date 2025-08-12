@@ -465,3 +465,4 @@ Keyboard shortcuts:
 Made with ❤️ by Rahmatt
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 `);
+ 
