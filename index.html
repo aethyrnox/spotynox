@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPOTYNOX - Your Spotify Receipt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="logo">SPOTYNOX</h1>
+            <button id="logoutBtn" class="logout-btn hidden">Logout</button>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Login Section -->
+            <section id="loginSection" class="login-section">
+                <div class="login-container">
+                    <div class="neon-box">
+                        <h2 class="login-title">Welcome to SPOTYNOX</h2>
+                        <p class="login-subtitle">Generate your Spotify receipt with neon style</p>
+                        <button id="loginBtn" class="spotify-login-btn">
+                            <span class="btn-icon">♪</span>
+                            Login with Spotify
+                        </button>
+                        <div id="loginError" class="error-message hidden"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard Section -->
+            <section id="dashboardSection" class="dashboard-section hidden">
+                <div class="dashboard-container">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <img id="userImage" src="" alt="User Avatar" class="avatar-img">
+                        </div>
+                        <h2 id="userName" class="user-name"></h2>
+                        <p id="userFollowers" class="user-followers"></p>
+                    </div>
+
+                    <div class="receipt-container">
+                        <div class="receipt">
+                            <div class="receipt-header">
+                                <h3>SPOTYNOX RECEIPT</h3>
+                                <div class="receipt-date" id="receiptDate"></div>
+                            </div>
+                            
+                            <div class="receipt-content">
+                                <h4>TOP TRACKS</h4>
+                                <div id="topTracks" class="tracks-list">
+                                    <!-- Tracks will be populated here -->
+                                </div>
+                                
+                                <div class="receipt-total">
+                                    <div class="total-line">
+                                        <span>TOTAL PLAYS:</span>
+                                        <span id="totalPlays">∞</span>
+                                    </div>
+                                    <div class="total-line">
+                                        <span>MUSIC TASTE:</span>
+                                        <span>EXCELLENT</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="receipt-footer">
+                                <p>Thank you for using SPOTYNOX!</p>
+                                <div class="barcode">|||||| |||| | |||| |||||| ||</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button id="refreshBtn" class="action-btn">Refresh Data</button>
+                        <button id="downloadBtn" class="action-btn">Download Receipt</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Loading Section -->
+            <section id="loadingSection" class="loading-section hidden">
+                <div class="loading-container">
+                    <div class="neon-loader">
+                        <div class="loader-ring"></div>
+                        <div class="loader-ring"></div>
+                        <div class="loader-ring"></div>
+                    </div>
+                    <p class="loading-text">Loading your music data...</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 Spotynox Neon. Made by Rahmatt</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
