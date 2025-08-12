@@ -2,7 +2,7 @@
 const SPOTIFY_CONFIG = {
     clientId: '489e0479f85e42548d4dcaddcd0d3dfb',
     clientSecret: '83bc778464834dfe9c38dc1911e5e5ac',
-    redirectUri: window.location.origin + window.location.pathname,
+    redirectUri: 'https://aethyrnox.github.io/spotynox',
     scopes: [
         'user-read-private',
         'user-read-email',
