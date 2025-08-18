@@ -256,10 +256,9 @@ async function refreshData() {
 // Logout functionality
 function logout() {
     // Clear stored data
-    localStorage.removeItem('spotify_access_token');
-    accessToken = null;
-    userData = null;
-    topTracks = [];
+  localStorage.removeItem("access_token");
+  window.location.href = "https://aethyrnox.github.io/spotynox";
+}
     
     // Show login section
     showLoginSection();
